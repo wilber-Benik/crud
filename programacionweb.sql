@@ -11,8 +11,8 @@
 /*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
 
 -- Volcando estructura de base de datos para programacionweb
-CREATE DATABASE IF NOT EXISTS `programacionweb` /*!40100 DEFAULT CHARACTER SET utf8 */;
-USE `programacionweb`;
+CREATE DATABASE IF NOT EXISTS `u504756857_wil` /*!40100 DEFAULT CHARACTER SET utf8 */;
+USE `u504756857_wil`;
 
 
 -- Volcando estructura para tabla programacionweb.personas
@@ -23,12 +23,12 @@ CREATE TABLE IF NOT EXISTS `personas` (
   `nombres` varchar(35) DEFAULT NULL,
   `fecha_actualizacion` timestamp NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `fecha_registro` timestamp NULL DEFAULT CURRENT_TIMESTAMP,
-  PRIMARY KEY (`persona_id`)
+  PRIMARY KEY (`personas_id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8 COMMENT='personitas';
 
 -- Volcando datos para la tabla programacionweb.personas: ~0 rows (aproximadamente)
 /*!40000 ALTER TABLE `personas` DISABLE KEYS */;
-INSERT INTO `personas` (`persona_id`, `paterno`, `materno`, `nombres`, `fecha_actualizacion`, `fecha_registro`) VALUES
+INSERT INTO `personas` (`personas_id`, `paterno`, `materno`, `nombres`, `fecha_actualizacion`, `fecha_registro`) VALUES
 	(00001, 'Mamani', 'Charca', 'Felipe', '2016-09-01 17:29:15', '2016-09-01 17:29:15'),
 	(00002, 'Zeda', 'Mallas', 'Josie', '2016-09-01 17:29:55', '2016-09-01 17:29:55');
 /*!40000 ALTER TABLE `personas` ENABLE KEYS */;
